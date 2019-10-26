@@ -38,10 +38,12 @@ html, body
     top: 1vh;
     left: 1vh;
     position: absolute;
+    text-align: center;
+    font-weight: 600;
 }
 @media (max-width:540px){
     .card {
-        width: 25vw;
+        width: 30vw;
     }
 }
 

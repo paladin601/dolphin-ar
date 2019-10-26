@@ -1,6 +1,5 @@
 import { init_ligths } from './ligths'
 import { load_model } from './loader'
-import { TWEEN } from '../../public/lib/tween';
 
 
 
@@ -68,8 +67,8 @@ export function init_scene() {
         $(".loader").css('display','none');
     });
 
-    let size = 0.001;
-//    group.scale.set(size, size, size);
+    let size = 1;
+    group.scale.set(size, size, size);
 
     group.position.set(0, 0, 0);
     render();
@@ -78,13 +77,9 @@ export function init_scene() {
 
 var render = function (time) {
 
-
-
     window.arToolkitContext.update(window.arToolkitSource.domElement)
 
     scene.visible = camera.visible
-
-    TWEEN.update(time);
 
     renderer.render(scene, camera);
     requestAnimationFrame(render);
