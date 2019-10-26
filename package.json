@@ -1,0 +1,29 @@
+{
+  "name": "map",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node server.js",
+    "start": "node heroku.js",
+    "build": "npx webpack --config src/webpack/webpack.config.js --display-error-details --mode=development --progress",
+    "webpack-watch": "webpack --config src/webpack/webpack.config.js --display-error-details --mode=development --progress --watch"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "three": "^0.109.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "three": "^0.109.0"
+  }
+}
