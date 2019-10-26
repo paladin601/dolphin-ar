@@ -47,7 +47,7 @@ export function init_scene() {
     window.arToolkitContext = arToolkitContext;
     controls = new THREEx.ArMarkerControls(arToolkitContext, camera, {
         type: 'pattern',
-        patternUrl: THREEx.ArToolkitContext.baseURL + '../public/data/patt.hiro',
+        patternUrl: THREEx.ArToolkitContext.baseURL + '../public/data/candy.patt',
         changeMatrixMode: 'cameraTransformMatrix'
     })
 
