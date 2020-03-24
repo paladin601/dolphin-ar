@@ -1,17 +1,28 @@
 # dolphin-ar
 ThreeJS interactive map.
 
-# Steps to set up the server
-## 1
+### Prerequisites
+* NodeJs
+
+#### Step 1: Clone project
+Execute in terminal:
+```
+git clone https://github.com/paladin601/dolphin-ar.git
+```
+#### Step 2: Install dependencies and run project
+Execute next command for install depencies
+```
 npm i
-
-## 2
+```
+Execute next command for run webpack and watch any changes 
+```
 npm run webpack-watch
-
-## 3
+```
+Finally execute next command for open server
+```
 npm run server
+```
 
-## 4
-go to https://localhost:8001 or https://ip:8001 and change ip for your ip address.
+**Go to https://localhost:8001 or https://ip:8001 and change ip for your ip address.**
 
-Note: don't forget to grant permissions on the firewall
+**Note:** don't forget to grant permissions on the firewall
